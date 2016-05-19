@@ -89,8 +89,23 @@ class Resolver(object):
                 serverindex++
         }
         
-        
-        
+        # DONT FORGET TO IMPLEMENT NAME ERRORS AND THE LIKE (RCODE)
+        if(response.Header.aa == 1){ # If response is authoritative, use below (this is very WIP and just a guess)
+            
+            # Get data
+            aliases = []
+            for additional in response.additionals:
+                if additional.type_ == Type.CNAME:
+                    aliases.append(additional.rdata.data)
+            addresses = []
+            for answer in response.answers:
+                if answer.type_ == Type.A:
+                    addresses.append(answer.rdata.data)
+
+            return hostname, aliases, addresses
+        }
+        else
+        {}
         """ \/ EXAMPLE \/
         
         # Create and send query

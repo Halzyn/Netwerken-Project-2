@@ -2,7 +2,7 @@
 
 """ Tests for your DNS resolver and server """
 
-portnr = 5353
+portnr = 5353 # Shouldn't this be 53? idk
 server = "localhost"
 
 class TestResolver(unittest.TestCase):
