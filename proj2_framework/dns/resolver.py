@@ -62,7 +62,7 @@ class Resolver(object):
         timeout = 2 # Time waited for a response
         sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         sock.settimeout(timeout)
-
+        
         # Create query
         question = dns.message.Question(hostname, Type.A, Class.IN)
         header = dns.message.Header(4242, 0, 1, 0, 0, 0)
@@ -74,7 +74,7 @@ class Resolver(object):
         responseget = False
         
         serverindex = 0
-        while(!responseget && serverindex <= len(ROOT_SERVERS)){
+        while not responseget and serverindex <= len(ROOT_SERVERS):
             serverinquestion = ROOT_SERVERS[serverindex]
             
             # Send query
@@ -83,14 +83,13 @@ class Resolver(object):
             # Receive response
             data = sock.recv(512)
             response = dns.message.Message.from_bytes(data)
-            if(response is not None)
+            if(response is not None):
                 responseget = True
-            else
-                serverindex++
-        }
+            else:
+                serverindex += 1
         
         # DONT FORGET TO IMPLEMENT NAME ERRORS AND THE LIKE (RCODE)
-        if(response.Header.aa == 1){ # If response is authoritative, use below (this is very WIP and just a guess)
+        if(response.header.aa == 1): # If response is authoritative, use below (this is very WIP and just a guess)
             
             # Get data
             aliases = []
@@ -103,9 +102,8 @@ class Resolver(object):
                     addresses.append(answer.rdata.data)
 
             return hostname, aliases, addresses
-        }
-        else
-        {}
+        return hostname, [], []
+        
         """ \/ EXAMPLE \/
         
         # Create and send query
