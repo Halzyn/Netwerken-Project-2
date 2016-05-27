@@ -10,7 +10,6 @@ of your resolver and server.
 import socket
 import struct
 
-from dns.classes import Class
 from dns.types import Type
 
 
@@ -25,24 +24,20 @@ class ResourceRecord(object):
             class_ (Class): the class
             rdata (RecordData): the record data
         """
-        self.name     = name
-        self.type_    = type_
-        self.class_   = class_
-        self.ttl      = ttl
-        self.rdata    = rdata
+        self.name = name
+        self.type_ = type_
+        self.class_ = class_
+        self.ttl = ttl
+        self.rdata = rdata
 
     def to_bytes(self, offset, composer):
         """ Convert ResourceRecord to bytes """
-        name = composer.to_bytes(offset, [self.name])
-        offset += len(name)
+        record = composer.to_bytes(offset, [self.name])
+        record += struct.pack("!HHI", self.type_, self.class_, self.ttl)
+        offset += len(record) + 2
         rdata = self.rdata.to_bytes(offset, composer)
-        return (name +
-            struct.pack("!HHIH",
-                self.type_,
-                self.class_,
-                self.ttl,
-                len(rdata)) + 
-            rdata)
+        record += struct.pack("!H", len(rdata)) + rdata
+        return record
 
     @classmethod
     def from_bytes(cls, packet, offset, parser):
@@ -115,6 +110,8 @@ class RecordData(object):
 
 
 class ARecordData(RecordData):
+    """ Record data for A type """
+
     def to_bytes(self, offset, composer):
         """ Convert to bytes
 
@@ -139,6 +136,8 @@ class ARecordData(RecordData):
 
 
 class CNAMERecordData(RecordData):
+    """ Record data for CNAME type """
+
     def to_bytes(self, offset, composer):
         """ Convert to bytes
 
@@ -164,6 +163,8 @@ class CNAMERecordData(RecordData):
 
 
 class NSRecordData(RecordData):
+    """ Record data for NS type """
+
     def to_bytes(self, offset, composer):
         """ Convert to bytes
 
@@ -189,6 +190,8 @@ class NSRecordData(RecordData):
 
 
 class AAAARecordData(RecordData):
+    """ Record data for AAAA type """
+
     def to_bytes(self, offset, composer):
         """ Convert to bytes
 
@@ -213,6 +216,8 @@ class AAAARecordData(RecordData):
 
 
 class GenericRecordData(RecordData):
+    """ Generic Record Data (for other types) """
+
     def to_bytes(self, offset, composer):
         """ Convert to bytes
 
@@ -223,7 +228,7 @@ class GenericRecordData(RecordData):
         return self.data
 
     @classmethod
-    def from_bytes(cls,packet, offset, rdlength, parser):
+    def from_bytes(cls, packet, offset, rdlength, parser):
         """ Create a RecordData object from bytes
 
         Args:
