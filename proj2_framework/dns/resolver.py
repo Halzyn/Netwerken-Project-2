@@ -64,11 +64,11 @@ class Resolver(object):
         sock.settimeout(timeout)
         
         # Create query
-        question = dns.message.Question(hostname, Type.A, Class.IN)
-        header = dns.message.Header(4242, 0, 1, 0, 0, 0)
+        question = dns.message.Question(hostname, Type.NS, Class.IN)
+        header = dns.message.Header(9001, 0, 1, 0, 0, 0)
         header.qr = 0
         header.opcode = 0
-        header.rd = 0 # Iterative (1 is recursive)
+        header.rd = 1 # Iterative (1 is recursive)
         query = dns.message.Message(header, [question])
         
         targetfound = False
@@ -87,13 +87,28 @@ class Resolver(object):
                 if(response is not None):
                     if(response.header.aa == 1):
                         targetfound = True
+                    print "answers"
                     for thing in response.answers:
                         print thing.name
-                        print thing.type_
-                        print thing.class_
+                        print Type.to_string(thing.type_)
+                        print Class.to_string(thing.class_)
                         print thing.ttl
                         print thing.rdata.data
-                        hints.append(thing.rdata.data)
+                    print "authorities"
+                    for thing in response.authorities:
+                        print thing.name
+                        print Type.to_string(thing.type_)
+                        print Class.to_string(thing.class_)
+                        print thing.ttl
+                        print thing.rdata.data
+                    print "additionals"
+                    for thing in response.additionals:
+                        print thing.name
+                        print Type.to_string(thing.type_)
+                        print Class.to_string(thing.class_)
+                        print thing.ttl
+                        print thing.rdata.data
+                        
                     #parse
                     #hints = hints.extend(newhints)
             except socket.timeout:

@@ -76,8 +76,8 @@ class RecordData(object):
         classdict = {
             Type.A: ARecordData,
             Type.CNAME: CNAMERecordData,
-            Type.NS: NSRecordData,
-            Type.AAAA: AAAARecordData
+            Type.NS: NSRecordData
+            #Type.AAAA: AAAARecordData
         }
         if type_ in classdict:
             return classdict[type_](data)
@@ -98,8 +98,8 @@ class RecordData(object):
         classdict = {
             Type.A: ARecordData,
             Type.CNAME: CNAMERecordData,
-            Type.NS: NSRecordData,
-            Type.AAAA: AAAARecordData
+            Type.NS: NSRecordData
+            #Type.AAAA: AAAARecordData
         }
         if type_ in classdict:
             return classdict[type_].from_bytes(
@@ -188,32 +188,32 @@ class NSRecordData(RecordData):
         data = names[0]
         return cls(data)
 
-
+"""
 class AAAARecordData(RecordData):
-    """ Record data for AAAA type """
+    "" Record data for AAAA type ""
 
     def to_bytes(self, offset, composer):
-        """ Convert to bytes
+        "" Convert to bytes
 
         Args:
             offset (int): offset in message
             composer (Composer): domain name composer
-        """
+        ""
         return socket.inet_pton(socket.AF_INET6, self.data)
 
     @classmethod
     def from_bytes(cls, packet, offset, rdlength, parser):
-        """ Create a RecordData object from bytes
+        "" Create a RecordData object from bytes
 
         Args:
             packet (bytes): packet
             offset (int): offset in message
             rdlength (int): length of rdata
             parser (int): domain name parser
-        """
+        ""
         data = socket.inet_ntop(socket.AF_INET6, packet[offset:offset+16])
         return cls(data)
-
+"""
 
 class GenericRecordData(RecordData):
     """ Generic Record Data (for other types) """
