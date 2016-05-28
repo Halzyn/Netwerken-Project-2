@@ -75,21 +75,30 @@ class Resolver(object):
         
         while not len(hints) == 0 and not targetfound:
             currenthint = hints.pop()
-            
+            print "currenthint: " + currenthint
             #the thing where we get the newhints
-            
-            # Send query
-            sock.sendto(query.to_bytes(), (currenthint, 53))
-            
-            # Receive response
-            data = sock.recv(512)
-            response = dns.message.Message.from_bytes(data)
-            if(response is not None):
-                if(response.header.aa == 1):
-                    targetfound = True
-                #parse
-            #hints = hints.extend(newhints)
-        
+            try:
+                # Send query
+                sock.sendto(query.to_bytes(), (currenthint, 53))
+                
+                # Receive response
+                data = sock.recv(512)
+                response = dns.message.Message.from_bytes(data)
+                if(response is not None):
+                    if(response.header.aa == 1):
+                        targetfound = True
+                    for thing in response.answers:
+                        print thing.name
+                        print thing.type_
+                        print thing.class_
+                        print thing.ttl
+                        print thing.rdata.data
+                        hints.append(thing.rdata.data)
+                    #parse
+                    #hints = hints.extend(newhints)
+            except socket.timeout:
+                pass
+
         # DONT FORGET TO IMPLEMENT NAME ERRORS AND THE LIKE (RCODE)
         if targetfound:
             # Get data
