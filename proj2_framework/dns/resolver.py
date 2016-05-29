@@ -68,13 +68,19 @@ class Resolver(object):
         header = dns.message.Header(9001, 0, 1, 0, 0, 0)
         header.qr = 0
         header.opcode = 0
-        header.rd = 1 # Iterative (1 is recursive)
+        header.rd = 0 # Iterative (1 is recursive)
         query = dns.message.Message(header, [question])
         
         targetfound = False
         
-        while not len(hints) == 0 and not targetfound:
-            currenthint = hints.pop()
+        hintindex = 0
+        
+        while hintindex + 1 < len(hints) and not targetfound:#-1 is for the hacky last bit
+            print "hintindex: "
+            print hintindex
+            print "len: "
+            print len(hints)
+            currenthint = hints[hintindex]
             print "currenthint: " + currenthint
             #the thing where we get the newhints
             try:
@@ -84,36 +90,97 @@ class Resolver(object):
                 # Receive response
                 data = sock.recv(512)
                 response = dns.message.Message.from_bytes(data)
-                if(response is not None):
-                    if(response.header.aa == 1):
+                if response is not None:
+                    """
+                    if response.header.aa == 1:
                         targetfound = True
+                        print "does this ever happen"
+                    """
                     print "answers"
                     for thing in response.answers:
-                        print thing.name
-                        print Type.to_string(thing.type_)
-                        print Class.to_string(thing.class_)
-                        print thing.ttl
-                        print thing.rdata.data
+                        if thing.type_ in [1,2,5]:
+                            print thing.name
+                            print Type.to_string(thing.type_)
+                            print Class.to_string(thing.class_)
+                            print thing.ttl
+                            print thing.rdata.data
                     print "authorities"
                     for thing in response.authorities:
-                        print thing.name
-                        print Type.to_string(thing.type_)
-                        print Class.to_string(thing.class_)
-                        print thing.ttl
-                        print thing.rdata.data
+                        if thing.type_ in [1,2,5]:
+                            print thing.name
+                            print Type.to_string(thing.type_)
+                            print Class.to_string(thing.class_)
+                            print thing.ttl
+                            print thing.rdata.data
                     print "additionals"
                     for thing in response.additionals:
+                        if thing.type_ in [1,2,5]:
+                            print thing.name
+                            print Type.to_string(thing.type_)
+                            print Class.to_string(thing.class_)
+                            print thing.ttl
+                            print thing.rdata.data
+                            if thing.rdata.data is not None and thing.rdata.data not in hints:
+                                hints.append(thing.rdata.data)
+                    #parse
+                    #hints = hints.extend(newhints)
+                hintindex += 1
+            except socket.timeout:
+                hintindex += 1
+                print "Server timed out"
+        
+        question = dns.message.Question(hostname, Type.ANY, Class.IN)
+        header = dns.message.Header(9001, 0, 1, 0, 0, 0)
+        header.qr = 0
+        header.opcode = 0
+        header.rd = 0 # Iterative (1 is recursive)
+        query = dns.message.Message(header, [question])
+        
+        print "LAST\nONE\n"
+        
+        currenthint = hints[hintindex]
+        #currenthint = "198.41.0.4"
+        print "trying: "
+        print currenthint
+        try:
+            # Send query
+            sock.sendto(query.to_bytes(), (currenthint, 53))
+            
+            # Receive response
+            data = sock.recv(512)
+            response = dns.message.Message.from_bytes(data)
+            if response is not None:
+                print "answers"
+                for thing in response.answers:
+                    if thing.type_ in [1,2,5]:
                         print thing.name
                         print Type.to_string(thing.type_)
                         print Class.to_string(thing.class_)
                         print thing.ttl
                         print thing.rdata.data
-                        
-                    #parse
-                    #hints = hints.extend(newhints)
-            except socket.timeout:
-                pass
-
+                print "authorities"
+                for thing in response.authorities:
+                    if thing.type_ in [1,2,5]:
+                        print thing.name
+                        print Type.to_string(thing.type_)
+                        print Class.to_string(thing.class_)
+                        print thing.ttl
+                        print thing.rdata.data
+                print "additionals"
+                for thing in response.additionals:
+                    if thing.type_ in [1,2,5]:
+                        print thing.name
+                        print Type.to_string(thing.type_)
+                        print Class.to_string(thing.class_)
+                        print thing.ttl
+                        print thing.rdata.data
+                        if thing.rdata.data is not None:
+                            hints.append(thing.rdata.data)
+                #parse
+                #hints = hints.extend(newhints)
+        except socket.timeout:
+            pass
+        
         # DONT FORGET TO IMPLEMENT NAME ERRORS AND THE LIKE (RCODE)
         if targetfound:
             # Get data
