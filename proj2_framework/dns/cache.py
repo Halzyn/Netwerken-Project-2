@@ -70,7 +70,9 @@ class RecordCache(object):
             type_ (Type): type
             class_ (Class): class
         """
-        pass
+        for record in self.records:
+			if (record.name == dname and record.type_ == type_ and record.class_ == class_):
+				return record
     
     def add_record(self, record):
         """ Add a new Record to the cache
@@ -78,14 +80,16 @@ class RecordCache(object):
         Args:
             record (ResourceRecord): the record added to the cache
         """
-        pass
+        self.records.append(record)
     
     def read_cache_file(self):
         """ Read the cache file from disk """
-        pass
+		with open(self.file) as json_data:
+			self.records = json.loads(json_data, object_hook=resource_from_json)
 
     def write_cache_file(self):
         """ Write the cache file to disk """
-        pass
+        with open(self.file) as json_data:
+			json.dumps(self.records, json_data, cls=ResourceEncoder, indent=4)
 
 
