@@ -50,7 +50,7 @@ def resource_from_json(dct):
 class RecordCache(object):
     """ Cache for ResourceRecords """
 	
-FILE = '.dns.cache'
+    FILE = '.dns.cache'
 	
     def __init__(self, ttl):
         """ Initialize the RecordCache
@@ -60,7 +60,7 @@ FILE = '.dns.cache'
         """
         self.records = []
         self.ttl = ttl
-	self.read_cache_file
+        self.read_cache_file
 	
 	def __del__(self):
 		self.write_cache_file
