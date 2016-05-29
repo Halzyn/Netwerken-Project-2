@@ -28,6 +28,8 @@ class Resolver(object):
         """
         self.caching = caching
         self.ttl = ttl
+        if caching:
+            self.cache = dns.cache.RecordCache(60)
 
     def gethostbyname(self, hostname):
         """ Translate a host name to IPv4 address.
@@ -42,6 +44,12 @@ class Resolver(object):
         Returns:
             (str, [str], [str]): (hostname, aliaslist, ipaddrlist)
         """
+        
+        if self.caching:
+            list_of_cnames = self.cache.lookup(hostname, Type.CNAME, Class.IN)
+            list_of_ips = self.cache.lookup(hostname, Type.A, Class.IN)
+            if list_of_ips is not None:
+                return hostname + list_of_cnames + list_of_ips
         
         # Rootservers
         hints = [
@@ -89,7 +97,10 @@ class Resolver(object):
                 response = dns.message.Message.from_bytes(data)
                 
                 if response is not None:
-                    #if response.header.aa == 1:
+                    if self.caching:
+                        record = response.answers + response.authorities + response.additionals
+                        self.cache.add_record(record)
+                    # Do something with 'if response.header.aa == 1:'?
                     print "\nanswers:"
                     for thing in response.answers:
                         if thing.type_ in [1,2,5]:
