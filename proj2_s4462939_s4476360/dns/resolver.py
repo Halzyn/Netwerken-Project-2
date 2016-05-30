@@ -98,7 +98,6 @@ class Resolver(object):
                     if self.caching:
                         for record in response.answers + response.authorities + response.additionals:
 							self.cache.add_record(record)
-                    # Do something with 'if response.header.aa == 1:'?
                     print "\nanswers:"
                     for answer in response.answers:
                         if answer.type_ in [1,2,5]:
