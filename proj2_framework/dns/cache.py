@@ -60,11 +60,11 @@ class RecordCache(object):
         Args:
             ttl (int): TTL of cached entries (if > 0)
         """
-	reload(sys)
-	sys.setdefaultencoding('utf8')
+        reload(sys)
+        sys.setdefaultencoding('utf8')
         self.records = []
         self.ttl = ttl
-	self.read_cache_file()
+        self.read_cache_file()
 		
 	def __del__(self):
 		self.write_cache_file()
@@ -94,15 +94,15 @@ class RecordCache(object):
     
     def read_cache_file(self):
         """ Read the cache file from disk """
-	try:
-		with open(self.CACHE_FILE, 'r+') as json_data:
-			self.records = json.loads(json_data.read().decode('utf-8', 'ignore').encode('utf-8'), object_hook=resource_from_json) #Converting JSON to ResourceRecord
-	except IOError:
-			print "can't open file"
+        try:
+            with open(self.CACHE_FILE, 'r+') as json_data:
+                self.records = json.loads(json_data.read().decode('utf-8', 'ignore').encode('utf-8'), object_hook=resource_from_json) #Converting JSON to ResourceRecord
+        except IOError:
+                print "can't open file"
 
     def write_cache_file(self):
         """ Write the cache file to disk """
-	with open(self.CACHE_FILE, 'w+') as json_data:
-		json.dump(self.records, json_data, cls=ResourceEncoder, indent=4, ensure_ascii=False) #converting ResourceRecord to JSON
+        with open(self.CACHE_FILE, 'w+') as json_data:
+            json.dump(self.records, json_data, cls=ResourceEncoder, indent=4, ensure_ascii=False) #converting ResourceRecord to JSON
 
 

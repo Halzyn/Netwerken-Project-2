@@ -47,7 +47,7 @@ class Resolver(object):
         
         alternatives = self.cache.lookup(hostname, Type.CNAME, Class.IN)
         ips = self.cache.lookup(hostname, Type.A, Class.IN)
-	if ips is not None:
+        if ips is not None:
 			print("pulled from cache:")
 			return hostname, alternatives, [ips.rdata.data]
 	
@@ -125,7 +125,7 @@ class Resolver(object):
                 print "Server timed out"
             hintindex += 1
         
-	self.cache.write_cache_file()
+        self.cache.write_cache_file()
         if targetfound:
             # Get data
             aliases = []
