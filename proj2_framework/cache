@@ -6184,7 +6184,7 @@
         "ttl": 172800, 
         "type": "AAAA", 
         "name": "a.gtld-servers.net", 
-        "rdata": " \u0001\u0005\u0003¨>\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u00000", 
+        "rdata": " \u0001\u0005\u0003>\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u00000", 
         "class": "IN"
     }, 
     {
@@ -6408,7 +6408,7 @@
         "ttl": 172800, 
         "type": "AAAA", 
         "name": "a.gtld-servers.net", 
-        "rdata": " \u0001\u0005\u0003¨>\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u00000", 
+        "rdata": " \u0001\u0005\u0003>\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u00000", 
         "class": "IN"
     }, 
     {
@@ -6513,7 +6513,7 @@
         "ttl": 172800, 
         "type": "AAAA", 
         "name": "a.gtld-servers.net", 
-        "rdata": " \u0001\u0005\u0003¨>\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u00000", 
+        "rdata": " \u0001\u0005\u0003>\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u00000", 
         "class": "IN"
     }, 
     {
@@ -6786,7 +6786,7 @@
         "ttl": 172800, 
         "type": "AAAA", 
         "name": "a.gtld-servers.net", 
-        "rdata": " \u0001\u0005\u0003¨>\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u00000", 
+        "rdata": " \u0001\u0005\u0003>\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u00000", 
         "class": "IN"
     }, 
     {
@@ -6975,7 +6975,7 @@
         "ttl": 172800, 
         "type": "AAAA", 
         "name": "a.gtld-servers.net", 
-        "rdata": " \u0001\u0005\u0003¨>\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u00000", 
+        "rdata": " \u0001\u0005\u0003>\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u00000", 
         "class": "IN"
     }, 
     {
@@ -7080,7 +7080,7 @@
         "ttl": 172800, 
         "type": "AAAA", 
         "name": "a.gtld-servers.net", 
-        "rdata": " \u0001\u0005\u0003¨>\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u00000", 
+        "rdata": " \u0001\u0005\u0003>\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u00000", 
         "class": "IN"
     }, 
     {
@@ -7353,7 +7353,7 @@
         "ttl": 172800, 
         "type": "AAAA", 
         "name": "a.gtld-servers.net", 
-        "rdata": " \u0001\u0005\u0003¨>\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u00000", 
+        "rdata": " \u0001\u0005\u0003>\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u00000", 
         "class": "IN"
     }, 
     {
@@ -7542,7 +7542,7 @@
         "ttl": 172800, 
         "type": "AAAA", 
         "name": "a.gtld-servers.net", 
-        "rdata": " \u0001\u0005\u0003¨>\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u00000", 
+        "rdata": " \u0001\u0005\u0003>\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u00000", 
         "class": "IN"
     }, 
     {
@@ -7647,7 +7647,7 @@
         "ttl": 172800, 
         "type": "AAAA", 
         "name": "a.gtld-servers.net", 
-        "rdata": " \u0001\u0005\u0003¨>\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u00000", 
+        "rdata": " \u0001\u0005\u0003>\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u00000", 
         "class": "IN"
     }, 
     {
@@ -7920,7 +7920,7 @@
         "ttl": 172800, 
         "type": "AAAA", 
         "name": "a.gtld-servers.net", 
-        "rdata": " \u0001\u0005\u0003¨>\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u00000", 
+        "rdata": " \u0001\u0005\u0003>\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u00000", 
         "class": "IN"
     }, 
     {
@@ -8109,7 +8109,7 @@
         "ttl": 172800, 
         "type": "AAAA", 
         "name": "a.gtld-servers.net", 
-        "rdata": " \u0001\u0005\u0003¨>\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u00000", 
+        "rdata": " \u0001\u0005\u0003>\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u00000", 
         "class": "IN"
     }, 
     {
@@ -8298,7 +8298,7 @@
         "ttl": 172800, 
         "type": "AAAA", 
         "name": "a.gtld-servers.net", 
-        "rdata": " \u0001\u0005\u0003¨>\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u00000", 
+        "rdata": " \u0001\u0005\u0003>\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u00000", 
         "class": "IN"
     }, 
     {
@@ -8487,7 +8487,7 @@
         "ttl": 172800, 
         "type": "AAAA", 
         "name": "a.gtld-servers.net", 
-        "rdata": " \u0001\u0005\u0003¨>\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u00000", 
+        "rdata": " \u0001\u0005\u0003>\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u00000", 
         "class": "IN"
     }, 
     {
@@ -9068,35 +9068,35 @@
         "ttl": 86400, 
         "type": "MX", 
         "name": "halzyn.bandcamp.com", 
-        "rdata": "\u0000\u0001\u0005aspmx\u0001l\u0006googleÀ\u001c", 
+        "rdata": "\u0000\u0001\u0005aspmx\u0001l\u0006google\u001c", 
         "class": "IN"
     }, 
     {
         "ttl": 86400, 
         "type": "MX", 
         "name": "halzyn.bandcamp.com", 
-        "rdata": "\u0000\n\u0006aspmx2\ngooglemailÀ\u001c", 
+        "rdata": "\u0000\n\u0006aspmx2\ngooglemail\u001c", 
         "class": "IN"
     }, 
     {
         "ttl": 86400, 
         "type": "MX", 
         "name": "halzyn.bandcamp.com", 
-        "rdata": "\u0000\n\u0006aspmx3À™", 
+        "rdata": "\u0000\n\u0006aspmx3", 
         "class": "IN"
     }, 
     {
         "ttl": 86400, 
         "type": "MX", 
         "name": "halzyn.bandcamp.com", 
-        "rdata": "\u0000\u0005\u0004alt1Às", 
+        "rdata": "\u0000\u0005\u0004alt1s", 
         "class": "IN"
     }, 
     {
         "ttl": 86400, 
         "type": "MX", 
         "name": "halzyn.bandcamp.com", 
-        "rdata": "\u0000\u0005\u0004alt2Às", 
+        "rdata": "\u0000\u0005\u0004alt2s", 
         "class": "IN"
     }, 
     {
@@ -9125,6 +9125,1455 @@
         "type": "NS", 
         "name": "bandcamp.com", 
         "rdata": "ns-958.awsdns-55.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "a.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "c.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "d.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "f.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "g.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "l.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "a.edu-servers.net", 
+        "rdata": "192.5.6.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "c.edu-servers.net", 
+        "rdata": "192.26.92.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "d.edu-servers.net", 
+        "rdata": "192.31.80.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "f.edu-servers.net", 
+        "rdata": "192.35.51.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "g.edu-servers.net", 
+        "rdata": "192.42.93.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "l.edu-servers.net", 
+        "rdata": "192.41.162.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "AAAA", 
+        "name": "g.edu-servers.net", 
+        "rdata": " \u0001\u0005\u0003Ì,\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u00006", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "d.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "f.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "c.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "g.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "l.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "a.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "a.edu-servers.net", 
+        "rdata": "192.5.6.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "c.edu-servers.net", 
+        "rdata": "192.26.92.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "d.edu-servers.net", 
+        "rdata": "192.31.80.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "f.edu-servers.net", 
+        "rdata": "192.35.51.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "g.edu-servers.net", 
+        "rdata": "192.42.93.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "l.edu-servers.net", 
+        "rdata": "192.41.162.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "AAAA", 
+        "name": "g.edu-servers.net", 
+        "rdata": " \u0001\u0005\u0003Ì,\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u00006", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "d.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "g.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "f.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "a.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "l.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "c.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "a.edu-servers.net", 
+        "rdata": "192.5.6.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "c.edu-servers.net", 
+        "rdata": "192.26.92.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "d.edu-servers.net", 
+        "rdata": "192.31.80.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "f.edu-servers.net", 
+        "rdata": "192.35.51.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "g.edu-servers.net", 
+        "rdata": "192.42.93.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "AAAA", 
+        "name": "g.edu-servers.net", 
+        "rdata": " \u0001\u0005\u0003Ì,\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u00006", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "l.edu-servers.net", 
+        "rdata": "192.41.162.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "c.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "g.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "a.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "f.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "d.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "l.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "a.edu-servers.net", 
+        "rdata": "192.5.6.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "c.edu-servers.net", 
+        "rdata": "192.26.92.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "d.edu-servers.net", 
+        "rdata": "192.31.80.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "f.edu-servers.net", 
+        "rdata": "192.35.51.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "g.edu-servers.net", 
+        "rdata": "192.42.93.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "l.edu-servers.net", 
+        "rdata": "192.41.162.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "AAAA", 
+        "name": "g.edu-servers.net", 
+        "rdata": " \u0001\u0005\u0003Ì,\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u00006", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "a.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "c.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "d.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "f.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "g.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "l.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "a.edu-servers.net", 
+        "rdata": "192.5.6.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "c.edu-servers.net", 
+        "rdata": "192.26.92.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "d.edu-servers.net", 
+        "rdata": "192.31.80.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "f.edu-servers.net", 
+        "rdata": "192.35.51.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "g.edu-servers.net", 
+        "rdata": "192.42.93.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "l.edu-servers.net", 
+        "rdata": "192.41.162.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "AAAA", 
+        "name": "g.edu-servers.net", 
+        "rdata": " \u0001\u0005\u0003Ì,\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u00006", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "d.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "f.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "g.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "l.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "a.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "c.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "a.edu-servers.net", 
+        "rdata": "192.5.6.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "c.edu-servers.net", 
+        "rdata": "192.26.92.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "d.edu-servers.net", 
+        "rdata": "192.31.80.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "f.edu-servers.net", 
+        "rdata": "192.35.51.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "g.edu-servers.net", 
+        "rdata": "192.42.93.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "AAAA", 
+        "name": "g.edu-servers.net", 
+        "rdata": " \u0001\u0005\u0003Ì,\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u00006", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "l.edu-servers.net", 
+        "rdata": "192.41.162.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "c.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "g.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "d.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "l.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "a.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "f.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "a.edu-servers.net", 
+        "rdata": "192.5.6.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "c.edu-servers.net", 
+        "rdata": "192.26.92.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "d.edu-servers.net", 
+        "rdata": "192.31.80.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "f.edu-servers.net", 
+        "rdata": "192.35.51.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "g.edu-servers.net", 
+        "rdata": "192.42.93.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "l.edu-servers.net", 
+        "rdata": "192.41.162.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "AAAA", 
+        "name": "g.edu-servers.net", 
+        "rdata": " \u0001\u0005\u0003Ì,\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u00006", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "a.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "c.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "d.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "f.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "g.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "l.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "a.edu-servers.net", 
+        "rdata": "192.5.6.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "c.edu-servers.net", 
+        "rdata": "192.26.92.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "d.edu-servers.net", 
+        "rdata": "192.31.80.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "f.edu-servers.net", 
+        "rdata": "192.35.51.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "g.edu-servers.net", 
+        "rdata": "192.42.93.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "l.edu-servers.net", 
+        "rdata": "192.41.162.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "AAAA", 
+        "name": "g.edu-servers.net", 
+        "rdata": " \u0001\u0005\u0003Ì,\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u00006", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "d.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "l.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "c.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "f.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "a.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "g.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "a.edu-servers.net", 
+        "rdata": "192.5.6.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "c.edu-servers.net", 
+        "rdata": "192.26.92.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "d.edu-servers.net", 
+        "rdata": "192.31.80.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "f.edu-servers.net", 
+        "rdata": "192.35.51.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "g.edu-servers.net", 
+        "rdata": "192.42.93.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "AAAA", 
+        "name": "g.edu-servers.net", 
+        "rdata": " \u0001\u0005\u0003Ì,\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u00006", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "l.edu-servers.net", 
+        "rdata": "192.41.162.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "a.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "c.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "d.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "f.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "g.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "l.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "a.edu-servers.net", 
+        "rdata": "192.5.6.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "c.edu-servers.net", 
+        "rdata": "192.26.92.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "d.edu-servers.net", 
+        "rdata": "192.31.80.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "f.edu-servers.net", 
+        "rdata": "192.35.51.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "g.edu-servers.net", 
+        "rdata": "192.42.93.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "l.edu-servers.net", 
+        "rdata": "192.41.162.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "AAAA", 
+        "name": "g.edu-servers.net", 
+        "rdata": " \u0001\u0005\u0003Ì,\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u00006", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "f.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "a.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "g.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "d.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "c.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "l.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "a.edu-servers.net", 
+        "rdata": "192.5.6.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "c.edu-servers.net", 
+        "rdata": "192.26.92.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "d.edu-servers.net", 
+        "rdata": "192.31.80.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "f.edu-servers.net", 
+        "rdata": "192.35.51.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "g.edu-servers.net", 
+        "rdata": "192.42.93.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "l.edu-servers.net", 
+        "rdata": "192.41.162.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "AAAA", 
+        "name": "g.edu-servers.net", 
+        "rdata": " \u0001\u0005\u0003Ì,\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u00006", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "a.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "c.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "d.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "f.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "g.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "l.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "a.edu-servers.net", 
+        "rdata": "192.5.6.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "c.edu-servers.net", 
+        "rdata": "192.26.92.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "d.edu-servers.net", 
+        "rdata": "192.31.80.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "f.edu-servers.net", 
+        "rdata": "192.35.51.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "g.edu-servers.net", 
+        "rdata": "192.42.93.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "l.edu-servers.net", 
+        "rdata": "192.41.162.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "AAAA", 
+        "name": "g.edu-servers.net", 
+        "rdata": " \u0001\u0005\u0003Ì,\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u00006", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "g.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "c.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "f.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "d.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "l.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "edu", 
+        "rdata": "a.edu-servers.net", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "a.edu-servers.net", 
+        "rdata": "192.5.6.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "c.edu-servers.net", 
+        "rdata": "192.26.92.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "d.edu-servers.net", 
+        "rdata": "192.31.80.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "f.edu-servers.net", 
+        "rdata": "192.35.51.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "g.edu-servers.net", 
+        "rdata": "192.42.93.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "l.edu-servers.net", 
+        "rdata": "192.41.162.30", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "AAAA", 
+        "name": "g.edu-servers.net", 
+        "rdata": " \u0001\u0005\u0003Ì,\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u00006", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "umass.edu", 
+        "rdata": "ns1.umass.edu", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "umass.edu", 
+        "rdata": "ns3.umass.edu", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "umass.edu", 
+        "rdata": "ns2.umass.edu", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "ns1.umass.edu", 
+        "rdata": "128.119.10.27", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "ns3.umass.edu", 
+        "rdata": "128.103.38.68", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "ns2.umass.edu", 
+        "rdata": "128.119.10.28", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "umass.edu", 
+        "rdata": "ns1.umass.edu", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "umass.edu", 
+        "rdata": "ns3.umass.edu", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "umass.edu", 
+        "rdata": "ns2.umass.edu", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "ns1.umass.edu", 
+        "rdata": "128.119.10.27", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "ns3.umass.edu", 
+        "rdata": "128.103.38.68", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "ns2.umass.edu", 
+        "rdata": "128.119.10.28", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "umass.edu", 
+        "rdata": "ns1.umass.edu", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "umass.edu", 
+        "rdata": "ns3.umass.edu", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "umass.edu", 
+        "rdata": "ns2.umass.edu", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "ns1.umass.edu", 
+        "rdata": "128.119.10.27", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "ns3.umass.edu", 
+        "rdata": "128.103.38.68", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "ns2.umass.edu", 
+        "rdata": "128.119.10.28", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "umass.edu", 
+        "rdata": "ns1.umass.edu", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "umass.edu", 
+        "rdata": "ns3.umass.edu", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "umass.edu", 
+        "rdata": "ns2.umass.edu", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "ns1.umass.edu", 
+        "rdata": "128.119.10.27", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "ns3.umass.edu", 
+        "rdata": "128.103.38.68", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "ns2.umass.edu", 
+        "rdata": "128.119.10.28", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "umass.edu", 
+        "rdata": "ns1.umass.edu", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "umass.edu", 
+        "rdata": "ns3.umass.edu", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "umass.edu", 
+        "rdata": "ns2.umass.edu", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "ns1.umass.edu", 
+        "rdata": "128.119.10.27", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "ns3.umass.edu", 
+        "rdata": "128.103.38.68", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "ns2.umass.edu", 
+        "rdata": "128.119.10.28", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "umass.edu", 
+        "rdata": "ns1.umass.edu", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "umass.edu", 
+        "rdata": "ns3.umass.edu", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "NS", 
+        "name": "umass.edu", 
+        "rdata": "ns2.umass.edu", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "ns1.umass.edu", 
+        "rdata": "128.119.10.27", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "ns3.umass.edu", 
+        "rdata": "128.103.38.68", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 172800, 
+        "type": "A", 
+        "name": "ns2.umass.edu", 
+        "rdata": "128.119.10.28", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 21600, 
+        "type": "MX", 
+        "name": "gaia.cs.umass.edu", 
+        "rdata": "\u0000\u0000\tbarramailÀ\u0011", 
+        "class": "IN"
+    }, 
+    {
+        "ttl": 21600, 
+        "type": "A", 
+        "name": "gaia.cs.umass.edu", 
+        "rdata": "128.119.245.12", 
         "class": "IN"
     }
 ]

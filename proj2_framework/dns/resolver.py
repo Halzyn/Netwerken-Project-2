@@ -44,12 +44,12 @@ class Resolver(object):
         Returns:
             (str, [str], [str]): (hostname, aliaslist, ipaddrlist)
         """
-        
-        alternatives = self.cache.lookup(hostname, Type.CNAME, Class.IN)
-        ips = self.cache.lookup(hostname, Type.A, Class.IN)
-        if ips is not None:
-			print("pulled from cache:")
-			return hostname, alternatives, [ips.rdata.data]
+        if self.caching:
+            alternatives = self.cache.lookup(hostname, Type.CNAME, Class.IN)
+            ips = self.cache.lookup(hostname, Type.A, Class.IN)
+            if ips is not None:
+                print("pulled from cache:")
+                return hostname, alternatives, [ips.rdata.data]
 	
         # Rootservers
         hints = [
@@ -99,24 +99,24 @@ class Resolver(object):
                         for record in response.answers + response.authorities + response.additionals:
 							self.cache.add_record(record)
                     # Do something with 'if response.header.aa == 1:'?
-					print "\nanswers:"
+                    print "\nanswers:"
                     for answer in response.answers:
                         if answer.type_ in [1,2,5]:
-							print Type.to_string(answer.type_)
+                            print Type.to_string(answer.type_)
                             print answer.name
                             print answer.rdata.data
                             print "Answer found.\n"
                             targetfound = True
-					print "\nauthorities:"
+                    print "\nauthorities:"
                     for authority in response.authorities:
                         if authority.type_ in [1,2,5]:
                             print Type.to_string(authority.type_)
                             print authority.name
                             print authority.rdata.data
-					print "\nadditionals:"
+                    print "\nadditionals:"
                     for additional in response.additionals:
                         if additional.type_ in [1,2,5]:
-							print Type.to_string(additional.type_)
+                            print Type.to_string(additional.type_)
                             print additional.name
                             print additional.rdata.data
                             if additional.rdata.data is not None and additional.rdata.data not in hints:
@@ -125,7 +125,8 @@ class Resolver(object):
                 print "Server timed out"
             hintindex += 1
         
-        self.cache.write_cache_file()
+        if self.caching:
+            self.cache.write_cache_file()
         if targetfound:
             # Get data
             aliases = []
