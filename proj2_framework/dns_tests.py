@@ -21,8 +21,6 @@ class TestResolver(unittest.TestCase):
         resolver = dns.resolver.Resolver(False, 0)
         hostname, aliases, addresses = resolver.gethostbyname("gaia.cs.umas.edu")
         self.assertEqual(addresses, [])
-    
-
 
 class TestResolverCache(unittest.TestCase):
     pass

@@ -13,10 +13,12 @@ from threading import Thread
 class RequestHandler(Thread):
     """ A handler for requests to the DNS server """
 
-    def __init__(self):
+    def __init__(self, data, addr):
         """ Initialize the handler thread """
         super().__init__()
         self.daemon = True
+        self.data = data
+        self.addr = addr
         
     def run(self):
         """ Run the handler thread """
@@ -40,15 +42,14 @@ class Server(object):
         self.port = port
         self.done = False
         self.s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-        self.s.bind(('', 53)) # should this be here?
-        # TODO: create socket: done?
 
     def serve(self):
         """ Start serving request """
-        # TODO: start listening
+        self.s.bind(('', self.port))
         while not self.done:
-            # TODO: receive request and open handler
-            pass
+            data, addr = s.recvfrom(1024)
+            handler = RequestHandler(data, addr)
+            handler.start()
 
     def shutdown(self):
         """ Shutdown the server """
