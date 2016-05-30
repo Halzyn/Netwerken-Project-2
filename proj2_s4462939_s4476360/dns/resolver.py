@@ -29,7 +29,7 @@ class Resolver(object):
         self.caching = caching
         self.ttl = ttl
         if caching:
-            self.cache = dns.cache.RecordCache(60)
+            self.cache = dns.cache.RecordCache()
 
     def gethostbyname(self, hostname):
         """ Translate a host name to IPv4 address.
@@ -45,7 +45,7 @@ class Resolver(object):
             (str, [str], [str]): (hostname, aliaslist, ipaddrlist)
         """
         if self.caching:
-		#self.cache.update() This was meant for TTL but it ended up not working.
+            #self.cache.update() This was meant for TTL but it ended up not working.
             alternatives = self.cache.lookup(hostname, Type.CNAME, Class.IN)
             ips = self.cache.lookup(hostname, Type.A, Class.IN)
             if ips is not None:

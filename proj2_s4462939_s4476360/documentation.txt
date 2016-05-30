@@ -3,7 +3,7 @@ Randy Wanga - s4462939
 
 We've built this DNS resolver with Python 2.7 using a provided framework. 
 
-Our DNS resolver creates a query message that'll be sent to various servers. Initially this list of servers
+Our DNS resolver creates a query message that will be sent to various servers. Initially this list of servers
 consists of the 13 DNS root servers, a through k. The message sent has the ANY type to ensure that we receive
 all the relevant data, such as responses of type A, CNAME and NS. We use these responses to append our list of
 servers that need to be queried. If an answer isn't found before the resolver runs out of servers to try, it
@@ -22,5 +22,8 @@ variable to our ResourceRecords, which saves when a record is cached. If the tim
 doesn't exceed the current time, the record is removed, since that means it's run out of time to live.
 For this TTL functionality we've used the external library "time".
 
-We've encountered a fair few encoding problems with UTF-8, which we've had to solve in rather unorthodox ways,
+We've encountered a fair few encoding problems with UTF-8 (in Python 2 specifically), which we've had to solve in rather unorthodox ways,
 such as making sure ASCII isn't turned on and at one point even decoding and then encoding to UTF-8.
+
+Unfortunately, we were unable to implement servers and zones.
+Currently, the server only deals with incoming recursive requests of type A, for which it calls the resolver and returns the result.
