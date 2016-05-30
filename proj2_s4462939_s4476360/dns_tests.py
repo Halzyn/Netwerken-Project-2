@@ -24,8 +24,6 @@ class TestResolver(unittest.TestCase):
 
 class TestResolverCache(unittest.TestCase):
     pass
-    
-
 
 class TestServer(unittest.TestCase):
     pass
