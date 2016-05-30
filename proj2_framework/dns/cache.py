@@ -60,7 +60,7 @@ class RecordCache(object):
         """
         self.records = []
         self.ttl = ttl
-        self.read_cache_file
+        self.read_cache_file()
 	
     def lookup(self, dname, type_, class_):
         """ Lookup resource records in cache
@@ -84,15 +84,19 @@ class RecordCache(object):
             record (ResourceRecord): the record added to the cache
         """
         self.records.append(record)
+	self.write_cache_file()
     
     def read_cache_file(self):
         """ Read the cache file from disk """
-	with open(self.FILE, 'r') as json_data:
-		self.records = json.loads(json_data, object_hook=resource_from_json) #Converting JSON to ResourceRecord
+	try:
+		with open(self.CACHE_FILE, 'r+') as json_data:
+			self.records = json.loads(json_data, object_hook=resource_from_json) #Converting JSON to ResourceRecord
+	except IOError:
+			print "can't open file"
 
     def write_cache_file(self):
         """ Write the cache file to disk """
-	with open(self.FILE, 'w') as json_data:
+	with open(self.CACHE_FILE, 'w+') as json_data:
 		json.dumps(self.records, json_data, cls=ResourceEncoder, indent=4) #converting ResourceRecord to JSON
 
 
