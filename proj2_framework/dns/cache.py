@@ -16,7 +16,7 @@ from dns.classes import Class
 
 
 class ResourceEncoder(json.JSONEncoder):
-    """ Conver ResourceRecord to JSON
+    """ Convert ResourceRecord to JSON
     
     Usage:
         string = json.dumps(records, cls=ResourceEncoder, indent=4)
@@ -50,7 +50,7 @@ def resource_from_json(dct):
 class RecordCache(object):
     """ Cache for ResourceRecords """
 	
-    FILE = '.dns.cache'
+    CACHE_FILE = '.cache'
 	
     def __init__(self, ttl):
         """ Initialize the RecordCache
@@ -61,9 +61,6 @@ class RecordCache(object):
         self.records = []
         self.ttl = ttl
         self.read_cache_file
-	
-	def __del__(self):
-		self.write_cache_file
 	
     def lookup(self, dname, type_, class_):
         """ Lookup resource records in cache
@@ -90,12 +87,12 @@ class RecordCache(object):
     
     def read_cache_file(self):
         """ Read the cache file from disk """
-	with open(self.FILE, 'r') as jsonfile:
-		self.records = json.loads(jsonfile, object_hook=resource_from_json)
+	with open(self.FILE, 'r') as json_data:
+		self.records = json.loads(json_data, object_hook=resource_from_json) #Converting JSON to ResourceRecord
 
     def write_cache_file(self):
         """ Write the cache file to disk """
-	with open(self.FILE, 'w') as jsonfile:
-		json.dumps(self.records, jsonfile, cls=ResourceEncoder, indent=4)
+	with open(self.FILE, 'w') as json_data:
+		json.dumps(self.records, json_data, cls=ResourceEncoder, indent=4) #converting ResourceRecord to JSON
 
 
