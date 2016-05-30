@@ -45,12 +45,12 @@ class Resolver(object):
             (str, [str], [str]): (hostname, aliaslist, ipaddrlist)
         """
         
-        if self.caching:
-            list_of_cnames = self.cache.lookup(hostname, Type.CNAME, Class.IN)
-            list_of_ips = self.cache.lookup(hostname, Type.A, Class.IN)
-            if list_of_ips is not None:
-                return hostname + list_of_cnames + list_of_ips
-        
+        alternatives = self.cache.lookup(hostname, Type.CNAME, Class.IN)
+        ips = self.cache.lookup(hostname, Type.A, Class.IN)
+	if ips is not None:
+			print("pulled from cache:")
+			return hostname, alternatives, [ips.rdata.data]
+	
         # Rootservers
         hints = [
         '198.41.0.4',
@@ -84,9 +84,7 @@ class Resolver(object):
         hintindex = 0
         
         while hintindex < len(hints) and not targetfound:
-            print "\n\n\nindex/len: " + str(hintindex) + "/" + str(len(hints))
             currenthint = hints[hintindex]
-            print "currenthint: " + currenthint
             
             try:
                 # Send query
@@ -98,35 +96,36 @@ class Resolver(object):
                 
                 if response is not None:
                     if self.caching:
-                        record = response.answers + response.authorities + response.additionals
-                        self.cache.add_record(record)
+                        for record in response.answers + response.authorities + response.additionals:
+							self.cache.add_record(record)
                     # Do something with 'if response.header.aa == 1:'?
-                    print "\nanswers:"
-                    for thing in response.answers:
-                        if thing.type_ in [1,2,5]:
-                            print Type.to_string(thing.type_)
-                            print thing.name
-                            print thing.rdata.data
-                            print "\n!!!\nFOUND IT\n!!!"
+					print "\nanswers:"
+                    for answer in response.answers:
+                        if answer.type_ in [1,2,5]:
+							print Type.to_string(answer.type_)
+                            print answer.name
+                            print answer.rdata.data
+                            print "Answer found.\n"
                             targetfound = True
-                    print "\nauthorities:"
-                    for thing in response.authorities:
-                        if thing.type_ in [1,2,5]:
-                            print Type.to_string(thing.type_)
-                            print thing.name
-                            print thing.rdata.data
-                    print "\nadditionals:"
-                    for thing in response.additionals:
-                        if thing.type_ in [1,2,5]:
-                            print Type.to_string(thing.type_)
-                            print thing.name
-                            print thing.rdata.data
-                            if thing.rdata.data is not None and thing.rdata.data not in hints:
-                                hints.append(thing.rdata.data)
+					print "\nauthorities:"
+                    for authority in response.authorities:
+                        if authority.type_ in [1,2,5]:
+                            print Type.to_string(authority.type_)
+                            print authority.name
+                            print authority.rdata.data
+					print "\nadditionals:"
+                    for additional in response.additionals:
+                        if additional.type_ in [1,2,5]:
+							print Type.to_string(additional.type_)
+                            print additional.name
+                            print additional.rdata.data
+                            if additional.rdata.data is not None and additional.rdata.data not in hints:
+                                hints.append(additional.rdata.data)
             except socket.timeout:
                 print "Server timed out"
             hintindex += 1
-            
+        
+	self.cache.write_cache_file()
         if targetfound:
             # Get data
             aliases = []

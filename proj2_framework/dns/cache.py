@@ -1,4 +1,5 @@
 #!/usr/bin/env python2
+#encoding=utf8
 
 """A cache for resource records
 
@@ -9,6 +10,7 @@ It is highly recommended to use these.
 """
 
 import json
+import sys
 
 from dns.resource import ResourceRecord, RecordData
 from dns.types import Type
@@ -50,7 +52,7 @@ def resource_from_json(dct):
 class RecordCache(object):
     """ Cache for ResourceRecords """
 	
-    CACHE_FILE = '.cache'
+    CACHE_FILE = 'cache'
 	
     def __init__(self, ttl):
         """ Initialize the RecordCache
@@ -58,9 +60,14 @@ class RecordCache(object):
         Args:
             ttl (int): TTL of cached entries (if > 0)
         """
+	reload(sys)
+	sys.setdefaultencoding('utf8')
         self.records = []
         self.ttl = ttl
-        self.read_cache_file()
+	self.read_cache_file()
+		
+	def __del__(self):
+		self.write_cache_file()
 	
     def lookup(self, dname, type_, class_):
         """ Lookup resource records in cache
@@ -84,19 +91,18 @@ class RecordCache(object):
             record (ResourceRecord): the record added to the cache
         """
         self.records.append(record)
-	self.write_cache_file()
     
     def read_cache_file(self):
         """ Read the cache file from disk """
 	try:
 		with open(self.CACHE_FILE, 'r+') as json_data:
-			self.records = json.loads(json_data, object_hook=resource_from_json) #Converting JSON to ResourceRecord
+			self.records = json.loads(json_data.read().decode('utf-8', 'ignore').encode('utf-8'), object_hook=resource_from_json) #Converting JSON to ResourceRecord
 	except IOError:
 			print "can't open file"
 
     def write_cache_file(self):
         """ Write the cache file to disk """
 	with open(self.CACHE_FILE, 'w+') as json_data:
-		json.dumps(self.records, json_data, cls=ResourceEncoder, indent=4) #converting ResourceRecord to JSON
+		json.dump(self.records, json_data, cls=ResourceEncoder, indent=4, ensure_ascii=False) #converting ResourceRecord to JSON
 
 
