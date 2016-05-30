@@ -1,12 +1,27 @@
 #!/usr/bin/env python2
 
+import unittest
+import sys
+import subprocess
+import dns.resolver
+
 """ Tests for your DNS resolver and server """
 
-portnr = 5353 # Shouldn't this be 53? idk
+portnr = 53
 server = "localhost"
 
 class TestResolver(unittest.TestCase):
-    pass
+    #subprocess.call("dns_client.py gaia.cs.umass.edu", shell=True)
+    def test_FQDN(self):
+        resolver = dns.resolver.Resolver(False, 0)
+        hostname, aliases, addresses = resolver.gethostbyname("gaia.cs.umass.edu")
+        self.assertEqual(addresses, ['128.119.245.12'])
+        
+    def test_incorrect_FQDN(self):
+        resolver = dns.resolver.Resolver(False, 0)
+        hostname, aliases, addresses = resolver.gethostbyname("gaia.cs.umas.edu")
+        self.assertEqual(addresses, [])
+    
 
 
 class TestResolverCache(unittest.TestCase):

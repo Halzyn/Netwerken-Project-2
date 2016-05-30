@@ -42,7 +42,7 @@ class Resolver(object):
             (str, [str], [str]): (hostname, aliaslist, ipaddrlist)
         """
         sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-        sock.settimeout(timeout)
+        sock.settimeout(2)
 
         # Create and send query
         question = dns.message.Question(hostname, Type.A, Class.IN)
