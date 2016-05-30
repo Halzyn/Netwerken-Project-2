@@ -38,7 +38,10 @@ class Server(object):
         self.caching = caching
         self.ttl = ttl
         self.port = port
-        # TODO: create socket
+        self.done = False
+        self.s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        self.s.bind(('', 53)) # should this be here?
+        # TODO: create socket: done?
 
     def serve(self):
         """ Start serving request """
@@ -49,5 +52,5 @@ class Server(object):
 
     def shutdown(self):
         """ Shutdown the server """
+        self.s.close() # also performs shutdown()
         self.done = True
-        # TODO: shutdown socket
