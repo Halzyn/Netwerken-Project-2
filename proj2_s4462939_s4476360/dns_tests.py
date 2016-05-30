@@ -2,8 +2,8 @@
 
 import unittest
 import sys
-import subprocess
 import dns.resolver
+import os
 
 """ Tests for your DNS resolver and server """
 
@@ -11,7 +11,7 @@ portnr = 53
 server = "localhost"
 
 class TestResolver(unittest.TestCase):
-    #subprocess.call("dns_client.py gaia.cs.umass.edu", shell=True)
+    
     def test_FQDN(self):
         resolver = dns.resolver.Resolver(False, 0)
         hostname, aliases, addresses = resolver.gethostbyname("gaia.cs.umass.edu")
@@ -24,6 +24,7 @@ class TestResolver(unittest.TestCase):
 
 class TestResolverCache(unittest.TestCase):
     pass
+    
 
 
 class TestServer(unittest.TestCase):
