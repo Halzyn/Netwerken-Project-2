@@ -9,13 +9,14 @@ of your resolver and server.
 
 import socket
 import struct
+import time
 
 from dns.types import Type
 
 
 class ResourceRecord(object):
     """ DNS resource record """
-    def __init__(self, name, type_, class_, ttl, rdata):
+    def __init__(self, name, type_, class_, ttl, rdata, time_saved):
         """ Create a new resource record
 
         Args:
@@ -23,12 +24,14 @@ class ResourceRecord(object):
             type_ (Type): the type
             class_ (Class): the class
             rdata (RecordData): the record data
+			time_saved (int): when a record is cached
         """
         self.name = name
         self.type_ = type_
         self.class_ = class_
         self.ttl = ttl
         self.rdata = rdata
+	self.time_saved = int(time.time())
 
     def to_bytes(self, offset, composer):
         """ Convert ResourceRecord to bytes """

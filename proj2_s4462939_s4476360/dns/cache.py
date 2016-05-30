@@ -11,6 +11,7 @@ It is highly recommended to use these.
 
 import json
 import sys
+import time
 
 from dns.resource import ResourceRecord, RecordData
 from dns.types import Type
@@ -31,6 +32,7 @@ class ResourceEncoder(json.JSONEncoder):
                 "class": Class.to_string(obj.class_),
                 "ttl": obj.ttl,
                 "rdata": obj.rdata.data
+			"time_saved": obj.time_saved
             }
         return json.JSONEncoder.default(self, obj)
 
@@ -46,6 +48,7 @@ def resource_from_json(dct):
     class_ = Class.from_string(dct["class"])
     ttl = dct["ttl"]
     rdata = RecordData.create(type_, dct["rdata"])
+	time_saved = dct["time_saved"]
     return ResourceRecord(name, type_, class_, ttl, rdata)
 
 
@@ -54,7 +57,7 @@ class RecordCache(object):
 	
     CACHE_FILE = 'cache'
 	
-    def __init__(self, ttl):
+    def __init__(self):
         """ Initialize the RecordCache
         
         Args:
@@ -63,7 +66,6 @@ class RecordCache(object):
         reload(sys)
         sys.setdefaultencoding('utf8')
         self.records = []
-        self.ttl = ttl
         self.read_cache_file()
 		
 	def __del__(self):
@@ -84,6 +86,12 @@ class RecordCache(object):
 			if (record.name == dname and record.type_ == type_ and record.class_ == class_):
 				return record
     
+	def update():
+	current_time = int(time.time())
+		for record in self.records:
+			if (record.time_saved + record.ttl < current_time):
+				self.records.remove(record)
+	
     def add_record(self, record):
         """ Add a new Record to the cache
         

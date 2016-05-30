@@ -45,6 +45,7 @@ class Resolver(object):
             (str, [str], [str]): (hostname, aliaslist, ipaddrlist)
         """
         if self.caching:
+		self.cache.update()
             alternatives = self.cache.lookup(hostname, Type.CNAME, Class.IN)
             ips = self.cache.lookup(hostname, Type.A, Class.IN)
             if ips is not None:
