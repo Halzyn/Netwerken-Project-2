@@ -13,7 +13,10 @@ returned and printed.
 The resolver is capable of caching its results. It saves these results in JSON format. Whenever the resolver
 is ran with the -c argument (or --caching), the resolver will first look through the cache to find the answer.
 If it's in the cache, it will simply return it. If not, it will run the regular algorithm, but it will save
-all the hints found in the cache file. Before checking for the answer in the cache, the resolver will update
+all the hints found in the cache file. 
+
+This is what was meant to happen with TTL, but it ended up not working the way we wanted it to:
+Before checking for the answer in the cache, the resolver will update
 the cache file. This is done to removed expired entries from the cache. To this end we've added a time_saved
 variable to our ResourceRecords, which saves when a record is cached. If the time_saved variable plus the TTL
 doesn't exceed the current time, the record is removed, since that means it's run out of time to live.

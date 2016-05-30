@@ -86,11 +86,11 @@ class RecordCache(object):
 			if (record.name == dname and record.type_ == type_ and record.class_ == class_):
 				return record
     
-	def update():
+	"""def update():
 	current_time = int(time.time())
 		for record in self.records:
 			if (record.time_saved + record.ttl < current_time):
-				self.records.remove(record)
+				self.records.remove(record)""" #This was meant for TTL but it ended up not working.
 	
     def add_record(self, record):
         """ Add a new Record to the cache
