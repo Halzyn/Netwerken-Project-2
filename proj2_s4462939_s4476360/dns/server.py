@@ -13,17 +13,33 @@ from threading import Thread
 class RequestHandler(Thread):
     """ A handler for requests to the DNS server """
 
-    def __init__(self, data, addr):
+    def __init__(self, data, addr, s):
         """ Initialize the handler thread """
         super().__init__()
         self.daemon = True
         self.data = data
         self.addr = addr
+        self.s = s
         
     def run(self):
         """ Run the handler thread """
-        # TODO: Handle DNS request
-        pass
+        dnsrequest = Message.from_bytes(self.data)
+        resolver = Resolver(True, self.ttl)
+        answers = []
+        authorities = []
+        additionals = []
+        for question in dnsrequest.questions:
+            if dnsrequest.qclass == 1: # IN
+                if dnsrequest.qtype == 1: # A
+                    if dnsrequest.header.rd == 1: # recursive
+                        hostname, aliases, addresses = resolver.gethostbyname(dnsrequest.qname)
+                        for address in addresses:
+                            answers.append(ResourceRecord(dnsrequest.qname, 1, 1, self.ttl, ARecordData(address)))
+        header = Header(dnsrequest.header.ident, 0, 0, len(answers), len(authorities), len(additionals))
+        dnsresponse = Message(header, [], answers, authorities, additionals)
+        
+        self.s.sendto(dnsresponse.to_bytes(), self.addr)
+                
 
 
 class Server(object):
@@ -47,8 +63,8 @@ class Server(object):
         """ Start serving request """
         self.s.bind(('', self.port))
         while not self.done:
-            data, addr = s.recvfrom(1024)
-            handler = RequestHandler(data, addr)
+            data, addr = self.s.recvfrom(1024)
+            handler = RequestHandler(data, addr, s)
             handler.start()
 
     def shutdown(self):
