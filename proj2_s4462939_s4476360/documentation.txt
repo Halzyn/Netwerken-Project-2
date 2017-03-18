@@ -1,5 +1,5 @@
-Jan Potma   - s4476360
-Randy Wanga - s4462939
+censor this shit         - s4476360
+censor this shit too tbh - s4462939
 
 We've built this DNS resolver with Python 2.7 using a provided framework. 
 
